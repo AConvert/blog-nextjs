@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BellIcon } from "@heroicons/react/24/solid";
+import { Avatar } from "@mui/material";
 
 export default function Navbar() {
   return (
@@ -23,7 +24,11 @@ export default function Navbar() {
           </div>
         </div>
         <div className="nav_right">
-          {/* <BellIcon className="notify_icon" /> */}
+          <BellIcon className="notify_icon" />
+          <Avatar
+            src="https://avatars0.githubusercontent.com/u/33479836?v=4"
+            className="avatar_icon"
+          />
         </div>
       </section>
     </main>
